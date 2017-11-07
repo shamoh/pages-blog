@@ -1,0 +1,23 @@
+---
+layout: default
+title: Home
+---
+
+<!-- TODO order tags -->
+{% for tag in site.tags %}
+  <a href="#{{ tag[0] }}" class="badge badge-pill badge-light">{{ tag[0] }}</a>
+{% endfor %}
+
+<div class="container">
+  {% for tag in site.tags %}
+    <a name="{{ tag[0] }}" />
+  	<h3>{{ tag[0] }}</h3>
+  	<ul>
+  		{% for post in tag[1] %}
+        <li><small>[ {{ post.date | date: '%B %d, %Y' }} ]</small> <a href="{{ post.url }}">{{ post.title }}</a>
+          {{ post.excerpt }}
+        </li>
+  		{% endfor %}
+  	</ul>
+  {% endfor %}
+</div>
