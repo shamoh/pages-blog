@@ -3,9 +3,3 @@ items:
   url: /
 - title: Tags
   url: /tags.html
-- title: Old Blog
-  url: http://yatel.kramolis.cz
-  right: true
-- title: Libor Kramoliš
-  url: http://libor.kramolis.cz
-  right: true

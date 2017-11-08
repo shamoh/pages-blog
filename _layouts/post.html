@@ -14,15 +14,17 @@ layout: default
   {{ content }}
 </p>
 
-<div class="btn-toolbar" role="toolbar">
-  {% if page.previous.url %}
-    <div class="btn-group mr-2" role="group" aria-label="Previous">
-      <a href="{{ page.previous.url }}" class="btn btn-outline-primary btn-sm">&laquo; {{ page.previous.title }}</a>
-    </div>
-  {% endif %}
-  {% if page.next.url %}
-    <div class="btn-group mr-2" role="group" aria-label="Next">
-      <a href="{{ page.next.url }}" class="btn btn-outline-primary btn-sm">{{ page.next.title }} &raquo;</a>
-    </div>
-  {% endif %}
-</div>
+<center>
+  <div class="btn-toolbar" role="toolbar">
+    {% if page.previous.url %}
+      <div class="btn-group mr-2" role="group" aria-label="Previous">
+        <a href="{{ page.previous.url }}" class="btn btn-outline-primary btn-sm">&laquo; {{ page.previous.title }}</a>
+      </div>
+    {% endif %}
+    {% if page.next.url %}
+      <div class="btn-group mr-2" role="group" aria-label="Next">
+        <a href="{{ page.next.url }}" class="btn btn-outline-primary btn-sm">{{ page.next.title }} &raquo;</a>
+      </div>
+    {% endif %}
+  </div>
+</center>
