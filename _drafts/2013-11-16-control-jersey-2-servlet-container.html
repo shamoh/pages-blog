@@ -1,0 +1,15 @@
+---
+layout: post
+title: Control Jersey 2 servlet container initialization
+date: '2013-11-16T17:06:00.000+01:00'
+author: Libor Kramoliš
+tags:
+- jaxrs
+- jersey
+- servlet
+modified_time: '2013-11-16T17:06:02.510+01:00'
+blogger_id: tag:blogger.com,1999:blog-2759548145050416517.post-5019494500070542413
+blogger_orig_url: http://yatel.kramolis.cz/2013/11/control-jersey-2-servlet-container.html
+---
+
+https://github.com/jersey/jersey/blob/dce460d50c79eac349344f1b7f755c043c8c8833/containers/jersey-servlet-core/src/main/java/org/glassfish/jersey/servlet/internal/spi/ServletContainerProvider.java<br /><br />Jak je mozne inicializovat JAX-RS aplikaci (tedy co vsechno dela&nbsp;https://github.com/jersey/jersey/blob/dce460d50c79eac349344f1b7f755c043c8c8833/containers/jersey-servlet/src/main/java/org/glassfish/jersey/servlet/init/JerseyServletContainerInitializer.java)<br /><br />Predstavit interni API&nbsp;ServletContainerProvider, na co je to dobre.<br />Pokud by to chtel nekdo pouzivat, at si zada request, muze se z toho stat verejne api.<br /><br />Prikladem by mohla byt:<br />- plosna registrace filtru.<br />- vytvorte default resource context<br /><br /><br /><br />
